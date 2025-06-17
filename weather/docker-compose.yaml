@@ -21,7 +21,7 @@ services:
     environment:
       POSTGRES_DB: weather
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: weather#$123
+      POSTGRES_PASSWORD: weather123
     ports:
       - "5432"
     healthcheck:

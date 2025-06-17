@@ -9,10 +9,10 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt /app/
+COPY req.txt /app/
 
 # Install dependencies, including GDAL
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r req.txt
 
 # Copy the project files into the container
 COPY . /app/
