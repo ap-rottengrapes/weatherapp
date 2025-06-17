@@ -131,3 +131,10 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Path to the GDAL library
+GDAL_LIBRARY_PATH = '/usr/lib/libgdal.so'
+GEOS_LIBRARY_PATH= '/usr/lib/libgeos_c.so'
+
+# Ensure that the GDAL_LIBRARY_PATH is an existing file
+assert os.path.exists(GDAL_LIBRARY_PATH), f"GDAL library not found at path: {GDAL_LIBRARY_PATH}"
