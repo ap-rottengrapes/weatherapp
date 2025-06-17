@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def weathermap(request):
+    return render(request, 'mainapp/weathermap.html')
