@@ -5,6 +5,7 @@ from django.contrib.gis.db import models as gismodel
 
 User = get_user_model()
 
+
 class WeatherForecast(models.Model):
     datetime = models.DateTimeField(null=True, blank=True)    
     temp = models.FloatField(null=True, blank=True)
