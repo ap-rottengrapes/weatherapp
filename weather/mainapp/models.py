@@ -5,7 +5,6 @@ from django.contrib.gis.db import models as gismodel
 
 User = get_user_model()
 
-
 class WeatherForecast(models.Model):
     datetime = models.DateTimeField(null=True, blank=True)    
     temp = models.FloatField(null=True, blank=True)
@@ -23,7 +22,7 @@ class WeatherForecast(models.Model):
     visibility = models.IntegerField(null=True, blank=True)
     pop = models.FloatField(null=True, blank=True) 
     rain_3h = models.FloatField(null=True, blank=True)  
-    
+
     def __str__(self):
         return f"{self.datetime} - {self.weather_main or 'Unknown'} ({self.temp or 'N/A'}°C)"
 
