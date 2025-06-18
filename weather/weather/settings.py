@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-     "widget_tweaks",
+    "django.contrib.gis",
+    "rest_framework",
+    "rest_framework_gis",
+    "widget_tweaks",
     "accounts",
     "mainapp",
 ]
